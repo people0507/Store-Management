@@ -32,6 +32,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.btnLoad1 = new System.Windows.Forms.Button();
             this.btnAdd1 = new System.Windows.Forms.Button();
             this.btnEdit1 = new System.Windows.Forms.Button();
@@ -42,14 +43,11 @@
             this.txtAmount = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtprice = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txtNameSP = new System.Windows.Forms.TextBox();
             this.txtIDSP = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel4.SuspendLayout();
@@ -97,6 +95,17 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(283, 20);
             this.txtSearch.TabIndex = 7;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Image = global::BTL.Properties.Resources.search_icon__3_;
+            this.btnSearch.Location = new System.Drawing.Point(34, 99);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 60);
+            this.btnSearch.TabIndex = 6;
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnLoad1
             // 
@@ -157,11 +166,9 @@
             this.panel3.Controls.Add(this.txtAmount);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.txtprice);
-            this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.txtNameSP);
             this.panel3.Controls.Add(this.txtIDSP);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(570, 323);
@@ -171,7 +178,7 @@
             // 
             // txtIDDM
             // 
-            this.txtIDDM.Location = new System.Drawing.Point(115, 250);
+            this.txtIDDM.Location = new System.Drawing.Point(113, 114);
             this.txtIDDM.Name = "txtIDDM";
             this.txtIDDM.Size = new System.Drawing.Size(283, 20);
             this.txtIDDM.TabIndex = 17;
@@ -179,7 +186,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 253);
+            this.label2.Location = new System.Drawing.Point(29, 117);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 16;
@@ -208,14 +215,6 @@
             this.txtprice.Size = new System.Drawing.Size(283, 20);
             this.txtprice.TabIndex = 13;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(115, 121);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(281, 21);
-            this.comboBox1.TabIndex = 12;
-            // 
             // txtNameSP
             // 
             this.txtNameSP.Location = new System.Drawing.Point(115, 66);
@@ -239,15 +238,6 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Giá:";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(31, 121);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Danh Mục:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -265,17 +255,6 @@
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "ID SP:";
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Image = global::BTL.Properties.Resources.search_icon__3_;
-            this.btnSearch.Location = new System.Drawing.Point(34, 99);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 60);
-            this.btnSearch.TabIndex = 6;
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // fProduct
             // 
@@ -310,11 +289,9 @@
         private System.Windows.Forms.Button btnEdit1;
         private System.Windows.Forms.Button btnDelete1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox txtNameSP;
         private System.Windows.Forms.TextBox txtIDSP;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView2;
